@@ -19,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
         mButton1 = findViewById(R.id.button1);
         mTtextview1 = findViewById(R.id.textView1);
 
-        mButton1.setOnClickListener(new myOnClickListener());
-    }
+        mButton1.setOnClickListener(new View.OnClickListener(){
 
-    private class myOnClickListener implements View.OnClickListener {
-        @Override
-        public void onClick(View view) {
-            mTtextview1.setText("You clicked button1");
-        }
+            @Override
+            public void onClick(View view) {
+                mTtextview1.setText("You clicked button1");
+
+            }
+        });
     }
-}
+    }
